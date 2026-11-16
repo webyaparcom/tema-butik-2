@@ -1,0 +1,113 @@
+{
+  "data": [
+    {
+      "id": "uwbddx8lmz",
+      "name": {
+        "tr": "Koleksiyon",
+        "en": "Collection",
+        "ar": "المجموعة"
+      },
+      "description": {
+        "tr": "Sezon sayısının parçaları, iki sayfalık yayınlarda.",
+        "en": "The pieces of the season issue, in two-page spreads.",
+        "ar": "قطع عدد الموسم في صفحات مزدوجة."
+      },
+      "path": "hizmetler",
+      "icon": "checkroom",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "20s109",
+          "hle6zj"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Mektup",
+        "en": "Letter",
+        "ar": "الرسالة"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "b3hzau",
+          "hle6zj"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Kurucunun mektubu ve butiğin dört sözü (kurgusal).",
+        "en": "The founder’s letter and the boutique’s four promises (fictional).",
+        "ar": "رسالة المؤسِّسة ووعود البوتيك الأربعة (افتراضي)."
+      }
+    },
+    {
+      "id": "g9g5geliwm",
+      "name": {
+        "tr": "Okurlar",
+        "en": "Readers",
+        "ar": "القرّاء"
+      },
+      "description": {
+        "tr": "Provadan sonra yazılanlar (kurgusal yorumlar).",
+        "en": "What readers wrote after a fitting (fictional reviews).",
+        "ar": "ما كتبته القارئات بعد البروفة (آراء افتراضية)."
+      },
+      "path": "referanslar",
+      "icon": "stars",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "5rm706",
+          "hle6zj"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "name": {
+        "tr": "Prova",
+        "en": "Fittings",
+        "ar": "البروفة"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 3,
+      "icon": "straighten",
+      "desing": {
+        "header": [],
+        "body": [
+          "jprotu",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Prova mektubu, adres ve butik saatleri.",
+        "en": "Fitting letter, address and boutique hours.",
+        "ar": "رسالة البروفة والعنوان وساعات البوتيك."
+      }
+    }
+  ],
+  "desc": []
+}

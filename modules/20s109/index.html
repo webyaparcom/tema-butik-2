@@ -1,0 +1,136 @@
+<section class="modulex-galeri-dergi-sayfa{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-galeri-dergi-sayfa-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* galeri-dergi-sayfa — galeri-numarali zikzak tek sütun hikâye, galeri-muze-duvar çerçeveli tablolar, galeri-slayt tek sahne sunar. Bu modül basılı katalog/dergi metaforudur: görseli metinle eşleyen iki sayfalık yayın (cilt gölgesi, sayfa kenarı katmanları, sayfa numarası, iki sütunlu metin) ve yayınlar arası sayfa çevirme gezgini. */
+  .modulex-galeri-dergi-sayfa { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-galeri-dergi-sayfa *, .modulex-galeri-dergi-sayfa *::before, .modulex-galeri-dergi-sayfa *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-galeri-dergi-sayfa :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-galeri-dergi-sayfa :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-galeri-dergi-sayfa :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-galeri-dergi-sayfa :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-galeri-dergi-sayfa img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-galeri-dergi-sayfa) img { height: auto; }
+  .modulex-galeri-dergi-sayfa [hidden] { display: none !important; }
+  .modulex-galeri-dergi-sayfa :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-galeri-dergi-sayfa :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-galeri-dergi-sayfa-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-galeri-dergi-sayfa-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-galeri-dergi-sayfa--bassiz .modulex-galeri-dergi-sayfa-bas { display: none; }
+  .modulex-galeri-dergi-sayfa-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-galeri-dergi-sayfa-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-galeri-dergi-sayfa-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-galeri-dergi-sayfa-bas { max-width: 780px; margin-inline: auto; text-align: center; justify-items: center; }
+  .modulex-galeri-dergi-sayfa-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-galeri-dergi-sayfa-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-galeri-dergi-sayfa-dugme:hover { transform: translateY(-2px); }
+  .modulex-galeri-dergi-sayfa-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-galeri-dergi-sayfa-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-galeri-dergi-sayfa-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-galeri-dergi-sayfa-kitap { display: grid; gap: 44px; }
+  .modulex-galeri-dergi-sayfa-yayin { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; max-width: 1080px; margin-inline: auto; border-radius: 4px 4px 8px 8px; background: --kartBg--; box-shadow: 0 3px 0 -1px --kartBg--, 0 4px 0 -1px color-mix(in srgb, --text-- 14%, transparent), 0 7px 0 -2px --kartBg--, 0 8px 0 -2px color-mix(in srgb, --text-- 12%, transparent), 0 44px 70px -44px color-mix(in srgb, --text-- 75%, transparent); transform-origin: 50% 50%; }
+  .modulex-galeri-dergi-sayfa-yayin::after { content: ""; position: absolute; inset-block: 0; inset-inline-start: calc(50% - 26px); width: 52px; background: linear-gradient(90deg, transparent, color-mix(in srgb, --text-- 16%, transparent) 50%, transparent); pointer-events: none; }
+  .modulex-galeri-dergi-sayfa-yayin--tek { grid-template-columns: minmax(0, 1fr); max-width: 540px; }
+  .modulex-galeri-dergi-sayfa-yayin--tek::after { display: none; }
+  .modulex-galeri-dergi-sayfa-sayfa { position: relative; display: grid; align-content: start; gap: 18px; padding: clamp(22px, 3vw, 42px) clamp(22px, 3vw, 42px) 58px; }
+  .modulex-galeri-dergi-sayfa-sayfa .modulex-galeri-dergi-sayfa-kap { overflow: hidden; border-radius: 2px; background: color-mix(in srgb, --text-- 6%, --kartBg--); }
+  .modulex-galeri-dergi-sayfa-sayfa .modulex-galeri-dergi-sayfa-g { width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; transition: transform 0.8s ease; }
+  .modulex-galeri-dergi-sayfa-sayfa:hover .modulex-galeri-dergi-sayfa-g { transform: scale(1.03); }
+  .modulex-galeri-dergi-sayfa-yazi { display: grid; gap: 8px; }
+  .modulex-galeri-dergi-sayfa-yazi .modulex-galeri-dergi-sayfa-kbaslik { font-family: var(--mx-font-heading, Georgia, serif); font-size: clamp(1.3rem, 2.2vw, 1.8rem); font-weight: 700; line-height: 1.2; }
+  .modulex-galeri-dergi-sayfa-yazi .modulex-galeri-dergi-sayfa-kmetin { columns: 2 12ch; column-gap: 22px; color: --text--; font-size: 0.95rem; line-height: 1.7; }
+  .modulex-galeri-dergi-sayfa-yazi::after { content: ""; width: 40px; height: 2px; margin-block-start: 4px; background: --accent--; }
+  .modulex-galeri-dergi-sayfa-sno { position: absolute; inset-block-end: 20px; color: --muted--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; font-variant-numeric: tabular-nums; }
+  .modulex-galeri-dergi-sayfa-sayfa:nth-child(odd) .modulex-galeri-dergi-sayfa-sno { inset-inline-start: clamp(22px, 3vw, 42px); }
+  .modulex-galeri-dergi-sayfa-sayfa:nth-child(even) .modulex-galeri-dergi-sayfa-sno { inset-inline-end: clamp(22px, 3vw, 42px); }
+  .modulex-galeri-dergi-sayfa:not(.modulex-galeri-dergi-sayfa--kjs) .modulex-galeri-dergi-sayfa-arac { display: none; }
+  .modulex-galeri-dergi-sayfa-arac { display: flex; align-items: center; justify-content: center; gap: 18px; margin-block-start: 30px; }
+  .modulex-galeri-dergi-sayfa-arac .modulex-galeri-dergi-sayfa-kontrol { margin: 0; }
+  .modulex-galeri-dergi-sayfa-sayac { min-width: 10ch; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.06em; text-align: center; font-variant-numeric: tabular-nums; }
+  .modulex-galeri-dergi-sayfa-yayin.modulex-galeri-dergi-sayfa--ileri { --ry: -16deg; animation: modulex-galeri-dergi-sayfa-cevir 0.6s ease both; }
+  .modulex-galeri-dergi-sayfa-yayin.modulex-galeri-dergi-sayfa--geri { --ry: 16deg; animation: modulex-galeri-dergi-sayfa-cevir 0.6s ease both; }
+  .modulex-galeri-dergi-sayfa-yayin:dir(rtl) { --yr: -1; }
+  @keyframes modulex-galeri-dergi-sayfa-cevir { from { opacity: 0.2; transform: perspective(1800px) rotateY(calc(var(--yr, 1) * var(--ry, -16deg))) translateY(8px); } to { opacity: 1; transform: none; } }
+  @media (max-width: 768px) {
+    .modulex-galeri-dergi-sayfa-yayin { grid-template-columns: minmax(0, 1fr); }
+    .modulex-galeri-dergi-sayfa-yayin::after { display: none; }
+    .modulex-galeri-dergi-sayfa-sayfa + .modulex-galeri-dergi-sayfa-sayfa { border-block-start: 1px dashed --cizgi--; }
+    .modulex-galeri-dergi-sayfa-sayfa { padding: 18px 18px 48px; }
+    .modulex-galeri-dergi-sayfa-yazi .modulex-galeri-dergi-sayfa-kmetin { columns: auto; }
+    .modulex-galeri-dergi-sayfa-sayfa:nth-child(n) .modulex-galeri-dergi-sayfa-sno { inset-inline: 18px auto; }
+  }
+  .modulex-galeri-dergi-sayfa-yer { display: grid; place-items: center; width: 100%; aspect-ratio: 4 / 3; background: color-mix(in srgb, --accent-- 14%, --kartBg--); color: --accentInk--; }
+  .modulex-galeri-dergi-sayfa-yer .material-symbols-outlined { font-size: 40px; }
+  .modulex-galeri-dergi-sayfa-bag { color: inherit; text-decoration: none; }
+  .modulex-galeri-dergi-sayfa-bag:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-galeri-dergi-sayfa-kbaslik { font-size: 1.05rem; font-weight: 700; line-height: 1.3; }
+  .modulex-galeri-dergi-sayfa-kmetin { color: --muted--; font-size: 0.95rem; line-height: 1.6; }
+  .modulex-galeri-dergi-sayfa-kat { color: --accentInk--; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+  .modulex-galeri-dergi-sayfa-kontrol { display: flex; gap: 10px; justify-content: flex-end; margin-block-start: 18px; }
+  .modulex-galeri-dergi-sayfa-ok { display: inline-grid; place-items: center; width: 48px; height: 48px; border: 1px solid --cizgi--; border-radius: 50%; background: --kartBg--; color: --text--; transition: background 0.25s ease, color 0.25s ease, opacity 0.25s ease; }
+  .modulex-galeri-dergi-sayfa-ok:hover:not(:disabled) { background: --accent--; color: --accentText--; }
+  .modulex-galeri-dergi-sayfa-ok:disabled { opacity: 0.4; cursor: default; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-galeri-dergi-sayfa :is(.modulex-galeri-dergi-sayfa-baslik, .modulex-galeri-dergi-sayfa-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-galeri-dergi-sayfa-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-galeri-dergi-sayfa { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-galeri-dergi-sayfa *, .modulex-galeri-dergi-sayfa *::before, .modulex-galeri-dergi-sayfa *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-galeri-dergi-sayfa";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const kitap = (s, P) => {
+        const Y = [...s.querySelectorAll("[data-kt]")];
+        if (Y.length < 2) return;
+        s.classList.add(P + "--kjs");
+        const say = s.querySelector("[data-kt-say]");
+        const G = [...s.querySelectorAll("[data-kt-git]")];
+        const rtl = () => getComputedStyle(s).direction === "rtl";
+        let n = 0;
+        const goster = (i, yon) => {
+          n = Math.max(0, Math.min(Y.length - 1, i));
+          Y.forEach((y, j) => { y.hidden = j !== n; y.classList.remove(P + "--ileri", P + "--geri"); });
+          if (yon) { void Y[n].offsetWidth; Y[n].classList.add(P + (yon > 0 ? "--ileri" : "--geri")); }
+          if (say) say.textContent = Y[n].dataset.ktEtiket || "";
+          G.forEach((b) => { b.disabled = Number(b.dataset.ktGit) < 0 ? n === 0 : n === Y.length - 1; });
+        };
+        G.forEach((b) => b.addEventListener("click", () => { const d = Number(b.dataset.ktGit); if (n + d >= 0 && n + d < Y.length) goster(n + d, d); }));
+        s.addEventListener("keydown", (e) => {
+          if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+          const d = (e.key === "ArrowRight") !== rtl() ? 1 : -1;
+          e.preventDefault();
+          if (n + d >= 0 && n + d < Y.length) goster(n + d, d);
+        });
+        const kap = Y[0].parentElement;
+        let x0 = null;
+        kap.addEventListener("pointerdown", (e) => { x0 = e.clientX; });
+        kap.addEventListener("pointerup", (e) => {
+          if (x0 === null) return;
+          const dx = e.clientX - x0;
+          x0 = null;
+          if (Math.abs(dx) < 60) return;
+          const d = (dx < 0) !== rtl() ? 1 : -1;
+          if (n + d >= 0 && n + d < Y.length) goster(n + d, d);
+        });
+        goster(0);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      kitap(s, P, az);
+    });
+  })();
+</script>
