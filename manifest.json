@@ -1,0 +1,29 @@
+{
+  "name": "Yaka Butik",
+  "short_name": "Yaka Butik",
+  "description": "Yaka Butik: her sezon bir «sayı» gibi hazırlanan küçük koleksiyon, ölçüye göre prova ve terzi düzeltmesi. Sezon defterini indirin, provanızı mektupla isteyin. Demo site; içerik kurgusaldır.",
+  "start_url": "/tr/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#B04A2E",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/img/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

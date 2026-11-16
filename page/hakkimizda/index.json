@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Mektup",
+    "en": "Letter",
+    "ar": "الرسالة"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 1,
+  "icon": "info",
+  "desing": {
+    "header": [],
+    "body": [
+      "b3hzau",
+      "hle6zj"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Kurucunun mektubu ve butiğin dört sözü (kurgusal).",
+    "en": "The founder’s letter and the boutique’s four promises (fictional).",
+    "ar": "رسالة المؤسِّسة ووعود البوتيك الأربعة (افتراضي)."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Mektup",
+    "en": "Letter",
+    "ar": "الرسالة"
+  },
+  "keyword": {
+    "tr": "hakkımızda",
+    "en": "about",
+    "ar": "من نحن"
+  },
+  "text": {},
+  "update": "2026-11-16T18:08:20.641Z",
+  "date": "2026-10-30"
+}

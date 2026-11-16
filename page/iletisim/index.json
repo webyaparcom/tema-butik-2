@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Prova",
+    "en": "Fittings",
+    "ar": "البروفة"
+  },
+  "status": "play",
+  "category": "",
+  "id": "iletisim",
+  "url": "",
+  "path": "iletisim",
+  "index": 3,
+  "icon": "straighten",
+  "desing": {
+    "header": [],
+    "body": [
+      "jprotu",
+      "k8mp01"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Prova mektubu, adres ve butik saatleri.",
+    "en": "Fitting letter, address and boutique hours.",
+    "ar": "رسالة البروفة والعنوان وساعات البوتيك."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Prova",
+    "en": "Fittings",
+    "ar": "البروفة"
+  },
+  "keyword": {
+    "tr": "prova, iletişim",
+    "en": "fitting, contact",
+    "ar": "بروفة، تواصل"
+  },
+  "text": {},
+  "update": "2026-11-16T18:08:20.649Z",
+  "date": "2026-10-30"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "g9g5geliwm",
+  "name": {
+    "tr": "Okurlar",
+    "en": "Readers",
+    "ar": "القرّاء"
+  },
+  "description": {
+    "tr": "Provadan sonra yazılanlar (kurgusal yorumlar).",
+    "en": "What readers wrote after a fitting (fictional reviews).",
+    "ar": "ما كتبته القارئات بعد البروفة (آراء افتراضية)."
+  },
+  "keyword": {
+    "tr": "referans, müşteri yorumu",
+    "en": "reference, review",
+    "ar": "مرجع، تقييم"
+  },
+  "path": "referanslar",
+  "icon": "stars",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "5rm706",
+      "hle6zj"
+    ],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Okurlar",
+    "en": "Readers",
+    "ar": "القرّاء"
+  },
+  "date": "2026-11-16T18:02:06.251Z",
+  "update": "2026-11-16T18:08:20.645Z"
+}

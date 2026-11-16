@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Yaka Butik: her sezon bir «sayı» gibi hazırlanan küçük koleksiyon, ölçüye göre prova ve terzi düzeltmesi. Sezon defterini indirin, provanızı mektupla isteyin. Demo site; içerik kurgusaldır.",
+    "en": "Yaka Butik: a small collection prepared like an «issue» each season, made-to-measure fittings and alterations. Download the season notebook and request your fitting by letter. Demo site; content is fictional.",
+    "ar": "ياكا بوتيك: مجموعة صغيرة تُعدّ في كل موسم كأنها «عدد» من مجلة، مع بروفات على المقاس وتعديلات الخياطة. حمّلي دفتر الموسم واطلبي البروفة برسالة. موقع تجريبي؛ المحتوى افتراضي."
+  },
+  "keyword": {
+    "tr": "butik, sezon koleksiyonu, prova, terzi düzeltmesi, keten gömlek, palto",
+    "en": "boutique, season collection, fitting, alterations, linen shirt, coat",
+    "ar": "بوتيك، مجموعة الموسم، بروفة، تعديلات الخياطة، قميص كتان، معطف"
+  },
+  "category": "Kurumsal",
+  "name": "Yaka Butik",
+  "domain": "butik-2.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "source-sans-3",
+    "heading": "playfair-display",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-naskh-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#B04A2E",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "0px",
+    "--mx-radius-md": "0px",
+    "--mx-radius-lg": "0px",
+    "--mx-radius-xl": "0px"
+  },
+  "icon": "icon.png"
+}

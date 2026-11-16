@@ -1,0 +1,40 @@
+{
+  "id": "uwbddx8lmz",
+  "name": {
+    "tr": "Koleksiyon",
+    "en": "Collection",
+    "ar": "المجموعة"
+  },
+  "description": {
+    "tr": "Sezon sayısının parçaları, iki sayfalık yayınlarda.",
+    "en": "The pieces of the season issue, in two-page spreads.",
+    "ar": "قطع عدد الموسم في صفحات مزدوجة."
+  },
+  "keyword": {
+    "tr": "koleksiyon, sezon",
+    "en": "collection, season",
+    "ar": "مجموعة، موسم"
+  },
+  "path": "hizmetler",
+  "icon": "checkroom",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "20s109",
+      "hle6zj"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Koleksiyon",
+    "en": "Collection",
+    "ar": "المجموعة"
+  },
+  "date": "2026-11-16T18:02:06.241Z",
+  "update": "2026-11-16T18:08:20.638Z"
+}
