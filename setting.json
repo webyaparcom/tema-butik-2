@@ -4,12 +4,16 @@
   "description": {
     "tr": "Yaka Butik: her sezon bir «sayı» gibi hazırlanan küçük koleksiyon, ölçüye göre prova ve terzi düzeltmesi. Sezon defterini indirin, provanızı mektupla isteyin. Demo site; içerik kurgusaldır.",
     "en": "Yaka Butik: a small collection prepared like an «issue» each season, made-to-measure fittings and alterations. Download the season notebook and request your fitting by letter. Demo site; content is fictional.",
-    "ar": "ياكا بوتيك: مجموعة صغيرة تُعدّ في كل موسم كأنها «عدد» من مجلة، مع بروفات على المقاس وتعديلات الخياطة. حمّلي دفتر الموسم واطلبي البروفة برسالة. موقع تجريبي؛ المحتوى افتراضي."
+    "ar": "ياكا بوتيك: مجموعة صغيرة تُعدّ في كل موسم كأنها «عدد» من مجلة، مع بروفات على المقاس وتعديلات الخياطة. حمّلي دفتر الموسم واطلبي البروفة برسالة. موقع تجريبي؛ المحتوى افتراضي.",
+    "de": "Yaka Butik: eine kleine Kollektion, die jede Saison wie eine «Ausgabe» entsteht, mit Anprobe nach Maß und Schneiderkorrektur. Laden Sie das Saisonheft herunter, fordern Sie Ihre Anprobe per Brief an. Demo-Seite; die Inhalte sind fiktiv.",
+    "ru": "Yaka Butik: небольшая коллекция, которую каждый сезон готовят как отдельный «выпуск», с примеркой по меркам и подгонкой портнихой. Скачайте сезонный журнал, закажите примерку письмом. Демо-сайт; содержание вымышленное."
   },
   "keyword": {
     "tr": "butik, sezon koleksiyonu, prova, terzi düzeltmesi, keten gömlek, palto",
     "en": "boutique, season collection, fitting, alterations, linen shirt, coat",
-    "ar": "بوتيك، مجموعة الموسم، بروفة، تعديلات الخياطة، قميص كتان، معطف"
+    "ar": "بوتيك، مجموعة الموسم، بروفة، تعديلات الخياطة، قميص كتان، معطف",
+    "de": "Boutique, Saisonkollektion, Anprobe, Schneiderkorrektur, Leinenhemd, Mantel",
+    "ru": "бутик, сезонная коллекция, примерка, подгонка у портного, льняная рубашка, пальто"
   },
   "category": "Kurumsal",
   "name": "Yaka Butik",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,

@@ -2,7 +2,9 @@
   "name": {
     "tr": "Mektup",
     "en": "Letter",
-    "ar": "الرسالة"
+    "ar": "الرسالة",
+    "de": "Brief",
+    "ru": "Письмо"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Kurucunun mektubu ve butiğin dört sözü (kurgusal).",
     "en": "The founder’s letter and the boutique’s four promises (fictional).",
-    "ar": "رسالة المؤسِّسة ووعود البوتيك الأربعة (افتراضي)."
+    "ar": "رسالة المؤسِّسة ووعود البوتيك الأربعة (افتراضي).",
+    "de": "Der Brief des Gründers und die vier Versprechen der Boutique (fiktiv).",
+    "ru": "Письмо основателя и четыре обещания бутика (вымышленные)."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Mektup",
     "en": "Letter",
-    "ar": "الرسالة"
+    "ar": "الرسالة",
+    "de": "Brief",
+    "ru": "Письмо"
   },
   "keyword": {
     "tr": "hakkımızda",
     "en": "about",
-    "ar": "من نحن"
+    "ar": "من نحن",
+    "de": "Über uns",
+    "ru": "О нас"
   },
   "text": {},
   "update": "2026-11-16T18:08:20.641Z",

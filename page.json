@@ -5,12 +5,16 @@
       "name": {
         "tr": "Koleksiyon",
         "en": "Collection",
-        "ar": "المجموعة"
+        "ar": "المجموعة",
+        "de": "Kollektion",
+        "ru": "Коллекция"
       },
       "description": {
         "tr": "Sezon sayısının parçaları, iki sayfalık yayınlarda.",
         "en": "The pieces of the season issue, in two-page spreads.",
-        "ar": "قطع عدد الموسم في صفحات مزدوجة."
+        "ar": "قطع عدد الموسم في صفحات مزدوجة.",
+        "de": "Stücke der Saisonausgabe, in zweiseitigen Publikationen.",
+        "ru": "Изделия сезона в двухстраничных изданиях."
       },
       "path": "hizmetler",
       "icon": "checkroom",
@@ -30,7 +34,9 @@
       "name": {
         "tr": "Mektup",
         "en": "Letter",
-        "ar": "الرسالة"
+        "ar": "الرسالة",
+        "de": "Brief",
+        "ru": "Письмо"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -51,7 +57,9 @@
       "description": {
         "tr": "Kurucunun mektubu ve butiğin dört sözü (kurgusal).",
         "en": "The founder’s letter and the boutique’s four promises (fictional).",
-        "ar": "رسالة المؤسِّسة ووعود البوتيك الأربعة (افتراضي)."
+        "ar": "رسالة المؤسِّسة ووعود البوتيك الأربعة (افتراضي).",
+        "de": "Der Brief des Gründers und die vier Versprechen der Boutique (fiktiv).",
+        "ru": "Письмо основателя и четыре обещания бутика (вымышленные)."
       }
     },
     {
@@ -59,12 +67,16 @@
       "name": {
         "tr": "Okurlar",
         "en": "Readers",
-        "ar": "القرّاء"
+        "ar": "القرّاء",
+        "de": "Leser",
+        "ru": "Читатели"
       },
       "description": {
         "tr": "Provadan sonra yazılanlar (kurgusal yorumlar).",
         "en": "What readers wrote after a fitting (fictional reviews).",
-        "ar": "ما كتبته القارئات بعد البروفة (آراء افتراضية)."
+        "ar": "ما كتبته القارئات بعد البروفة (آراء افتراضية).",
+        "de": "Was nach der Probe geschrieben wurde (fiktive Bewertungen).",
+        "ru": "Что написали после репетиции (вымышленные отзывы)."
       },
       "path": "referanslar",
       "icon": "stars",
@@ -84,7 +96,9 @@
       "name": {
         "tr": "Prova",
         "en": "Fittings",
-        "ar": "البروفة"
+        "ar": "البروفة",
+        "de": "Anprobe",
+        "ru": "Примерка"
       },
       "status": "play",
       "id": "iletisim",
@@ -105,7 +119,9 @@
       "description": {
         "tr": "Prova mektubu, adres ve butik saatleri.",
         "en": "Fitting letter, address and boutique hours.",
-        "ar": "رسالة البروفة والعنوان وساعات البوتيك."
+        "ar": "رسالة البروفة والعنوان وساعات البوتيك.",
+        "de": "Anpassungsschreiben, Adresse und Boutique-Öffnungszeiten.",
+        "ru": "Письмо для примерки, адрес и часы работы бутика."
       }
     }
   ],
