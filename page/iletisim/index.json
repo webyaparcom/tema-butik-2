@@ -2,7 +2,9 @@
   "name": {
     "tr": "Prova",
     "en": "Fittings",
-    "ar": "البروفة"
+    "ar": "البروفة",
+    "de": "Anprobe",
+    "ru": "Примерка"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Prova mektubu, adres ve butik saatleri.",
     "en": "Fitting letter, address and boutique hours.",
-    "ar": "رسالة البروفة والعنوان وساعات البوتيك."
+    "ar": "رسالة البروفة والعنوان وساعات البوتيك.",
+    "de": "Anpassungsschreiben, Adresse und Boutique-Öffnungszeiten.",
+    "ru": "Письмо для примерки, адрес и часы работы бутика."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Prova",
     "en": "Fittings",
-    "ar": "البروفة"
+    "ar": "البروفة",
+    "de": "Anprobe",
+    "ru": "Примерка"
   },
   "keyword": {
     "tr": "prova, iletişim",
     "en": "fitting, contact",
-    "ar": "بروفة، تواصل"
+    "ar": "بروفة، تواصل",
+    "de": "Anprobe, Kontakt",
+    "ru": "примерка, контакты"
   },
   "text": {},
   "update": "2026-11-16T18:08:20.649Z",

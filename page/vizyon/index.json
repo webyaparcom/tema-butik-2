@@ -3,17 +3,23 @@
   "name": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "description": {
     "tr": "Vizyonumuz",
     "en": "Our vision",
-    "ar": "رؤيتنا"
+    "ar": "رؤيتنا",
+    "de": "Unsere Vision",
+    "ru": "Наше видение"
   },
   "keyword": {
     "tr": "Vizyon",
     "en": "vision, our vision, goals",
-    "ar": "الرؤية, رؤيتنا, الأهداف"
+    "ar": "الرؤية, رؤيتنا, الأهداف",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "path": "vizyon",
   "icon": "visibility",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Vizyonumuz</h2>\n<p>Gardıropta yıllarca kalan parçaların butiği olmak.</p>",
     "en": "<h2>Our vision</h2>\n<p>To be the boutique of pieces that stay in the wardrobe for years.</p>",
-    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون بوتيك القطع التي تبقى في الخزانة سنوات.</p>"
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون بوتيك القطع التي تبقى في الخزانة سنوات.</p>",
+    "de": "<h2>Unsere Vision</h2>\n<p>Die Boutique für Stücke zu sein, die jahrelang im Kleiderschrank bleiben.</p>",
+    "ru": "<h2>Наше видение</h2>\n<p>Стать бутиком вещей, которые годами остаются в гардеробе.</p>"
   },
   "title": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "date": "2026-11-16T18:02:06.095Z",
   "update": "2026-11-16T18:08:20.655Z",
